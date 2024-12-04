@@ -2,7 +2,7 @@
  *  Advent of Code 2024
  *  Day 4 - Part 2
  *  
- *  Answer:
+ *  Answer: 1831
  * 
  *  @author Kian Chua
  * 
