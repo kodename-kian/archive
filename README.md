@@ -4,7 +4,7 @@ A *(consistently outdated)* archive of my solutions & submissions to various cod
 
 ## Contents
 * [Advent of Code 2024](https://adventofcode.com/2024)
-* [ICPC 2024 North America Qualifiers](https://naq24.kattis.com/contests/naq24/standings?filter=6654)
+* [ICPC 2024 North America Qualifiers](https://naq24.kattis.com/contests/naq24/standings/6654)
 * [Advent of Code 2023](https://adventofcode.com/2023)
 
 ## Competition History
