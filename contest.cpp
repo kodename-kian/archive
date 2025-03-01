@@ -1,9 +1,10 @@
-/**
+/*
  *  My (relatively clean) competitive
  *  programming template
  * 
  *  @author Kian Chua
  *  @date 12/2024
+ * 
  */
 
 #include <bits/stdc++.h>
