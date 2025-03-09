@@ -5,12 +5,13 @@
  *  ====================== Segment Tree ========================
  *  Standard implementation of a Segment Tree
  *  Specifications:
- *  - indices are numbered from [0 ... n-1]
- *  - supports point updates ONLY
- *  - supports point and range queries
+ *  - Indices are numbered from [0 ... n-1]
+ *  - Supports point updates ONLY
+ *  - Supports point and range queries
+ *  - Array-based implementation
  * 
  *  TODO: template to create a generic class
- *  ==========================================================
+ *  ============================================================
  */
 
 #define ll long long
@@ -27,6 +28,11 @@ class SegmentTree {
         // adds `d` to a[t]
         void update(int target, ll diff) {
             update(target, diff, 0, 0, n-1);
+        }
+
+        // returns the value of a[t]
+        ll query(int target) {
+            return query(target, target, 0, 0, n-1);
         }
 
         // returns the sum of a[l] + ... + a[r]

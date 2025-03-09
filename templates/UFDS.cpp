@@ -2,17 +2,17 @@
  *  @author Kian Chua
  *  @date 2025/03
  * 
- *  ========================= UFDS ===========================
+ *  ========================= UFDS ============================
  *  Standard implementation of Union Find Disjoint Sets (DSU)
  *  Specifications:
  *  - Elements indexed from [0, n-1]
  *  - With path compression
  *  - Without union by rank/size
- *  ==========================================================
+ *  ===========================================================
  */
 
 class UFDS {
-    private: vectorint> p;
+    private: vector<int> p;
     public:
         UFDS(int n) {
             p.resize(n);
