@@ -41,13 +41,15 @@ void solve() {
     for (int i = 0; i < n; i++) { int s; cin >> s; shirtToIndex[s-1] = n+m-1-i; }
     
     // indexes to mark the position of the `divide` in the stack
-    int cur = m-1;                 // [cur = i] => in-between shirts [i] and [i+1]
+    int cur = m-1;                 // [cur=i] => in-between shirts [i] and [i+1]
     int nxt;                       // to be used during processing
 
     vector<ll> a(m+n, 1);          // dummy array of 1s to init segtree
     SegmentTree st(a);             // initialize SegmentTree
     vector<ll> costs(m+n);         // costs[i] is the cost of going from shirt `i-1` to shirt `i`, (0 <= i < m+n)
     
+    // for a given `i` from [0, m+n-1]: 
+    //   calculate the cost of going from shirt `i-1` to shirt `i`
     for (int i=0; i < m+n; i++) {
         ll cost_i = 0;
         nxt = shirtToIndex[i];     // get index of destination shirt
